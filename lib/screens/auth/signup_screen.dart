@@ -97,7 +97,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
     }
 
     // TODO: Implement sign up logic
-    Navigator.of(context).pushReplacementNamed(AppRoutes.verifyEmail);
+    Navigator.of(context).pushReplacementNamed(
+      AppRoutes.home,
+      arguments: 'Account created successfully',
+    );
   }
 
   @override
